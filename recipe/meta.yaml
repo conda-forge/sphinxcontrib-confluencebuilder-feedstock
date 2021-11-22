@@ -1,5 +1,5 @@
 {% set name = "sphinxcontrib-confluencebuilder" %}
-{% set version = "1.6.0" %}
+{% set version = "1.7.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/sphinxcontrib-confluencebuilder-{{ version }}.tar.gz
-  sha256: b39f577151f1f3eb6f2b98353d253a6940864007f50fda8e77f6c99e6f56304e
+  sha256: e5372b814000ce8207be2add03d3cd8a1309bd9bada8f035269b0d645a4a8190
 
 build:
   number: 0
