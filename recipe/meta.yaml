@@ -23,7 +23,6 @@ requirements:
     - python >=3.5
   run:
     - python >=3.5
-    - future >=0.16.0
     - requests >=2.14.0
     - sphinx >=1.8
 
