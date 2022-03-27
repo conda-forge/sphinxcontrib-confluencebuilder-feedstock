@@ -22,6 +22,7 @@ requirements:
     - pip
     - python >=3.5
   run:
+    # https://github.com/sphinx-contrib/confluencebuilder/blob/v{{ version }}/setup.py
     - python >=3.5
     - requests >=2.14.0
     - sphinx >=1.8
