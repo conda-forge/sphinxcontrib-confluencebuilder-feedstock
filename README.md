@@ -1,11 +1,11 @@
-About sphinxcontrib-confluencebuilder
-=====================================
+About sphinxcontrib-confluencebuilder-feedstock
+===============================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/sphinxcontrib-confluencebuilder-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/sphinx-contrib/confluencebuilder
 
 Package license: BSD-2-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/sphinxcontrib-confluencebuilder-feedstock/blob/main/LICENSE.txt)
 
 Summary: Sphinx extension to output Atlassian Confluence Storage Markup documents and publish to Confluence instances.
 
