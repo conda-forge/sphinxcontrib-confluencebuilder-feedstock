@@ -143,5 +143,6 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@conda-forge/sphinx](https://github.com/conda-forge/sphinx/)
 * [@maresb](https://github.com/maresb/)
 
