@@ -1,5 +1,5 @@
 {% set name = "sphinxcontrib-confluencebuilder" %}
-{% set version = "2.4.0" %}
+{% set version = "2.5.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: ab7f86c0c556311bb8796c1b75771b3d0ce906105771910c153a5b10efad78b9
+  sha256: ac4f6d59489ef5969e5a7291fa88f04bd03a04712db20569c335c0b96a319274
 
 build:
   number: 0
@@ -25,8 +25,8 @@ requirements:
   run:
     # https://github.com/sphinx-contrib/confluencebuilder/blob/v{{ version }}/setup.py
     - python >=3.7
-    - requests >=2.14.0
-    - sphinx >=5.0
+    - requests >=2.25.0
+    - sphinx >=6.1
 
 test:
   imports:
