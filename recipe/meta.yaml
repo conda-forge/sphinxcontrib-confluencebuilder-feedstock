@@ -19,9 +19,9 @@ build:
 
 requirements:
   host:
+    - python >=3.8
+    - flit-core >=3.7
     - pip
-    - flit-core >=3.8
-    - python >=3.7
   run:
     # https://github.com/sphinx-contrib/confluencebuilder/blob/v{{ version }}/setup.py
     - python >=3.8
