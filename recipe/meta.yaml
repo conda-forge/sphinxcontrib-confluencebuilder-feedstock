@@ -1,21 +1,20 @@
 {% set name = "sphinxcontrib-confluencebuilder" %}
 {% set version = "2.6.1" %}
 
-
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/sphinxcontrib_confluencebuilder-{{ version }}.tar.gz
   sha256: f729987f12f9d190c694bce8d8b5e2067ba8dacbd6c67977ec7fdce843400a30
 
 build:
-  number: 0
-  noarch: python
   entry_points:
     - sphinx-build-confluence = sphinxcontrib.confluencebuilder.__main__:main
-  script: {{ PYTHON }} -m pip install . -vv
+  noarch: python
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
+  number: 0
 
 requirements:
   host:
@@ -23,7 +22,6 @@ requirements:
     - flit-core >=3.7
     - pip
   run:
-    # https://github.com/sphinx-contrib/confluencebuilder/blob/v{{ version }}/setup.py
     - python >=3.8
     - requests >=2.25.0
     - sphinx >=6.1
@@ -40,9 +38,12 @@ test:
 
 about:
   home: https://github.com/sphinx-contrib/confluencebuilder
-  summary: Sphinx extension to output Atlassian Confluence Storage Markup documents and publish to Confluence instances.
+  summary: Sphinx extension to build Atlassian Confluence Storage Markup
+  dev_url: https://github.com/sphinx-contrib/confluencebuilder
   license: BSD-2-Clause
-  license_file: LICENSE
+  license_file:
+    - LICENSE-3RD-PARTY
+    - LICENSE
 
 extra:
   recipe-maintainers:
