@@ -18,11 +18,11 @@ build:
 
 requirements:
   host:
-    - python >=3.8
+    - python >=3.9
     - flit-core >=3.7
     - pip
   run:
-    - python >=3.8
+    - python >=3.9
     - requests >=2.25.0
     - sphinx >=7.2
 
