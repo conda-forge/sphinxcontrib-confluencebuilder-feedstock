@@ -1,5 +1,6 @@
+{% set python_min = python_min|default("3.9") %}
 {% set name = "sphinxcontrib-confluencebuilder" %}
-{% set version = "2.8.0" %}
+{% set version = "2.9.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/sphinxcontrib_confluencebuilder-{{ version }}.tar.gz
-  sha256: adbafc3bfae8ee9c949df5f754fd5fb1f3c73426a2e813d18599162f495fced5
+  sha256: da517c892f1ceca5c37574f622e029167c74838b325a620fd72db95b90e49090
 
 build:
   entry_points:
@@ -18,11 +19,11 @@ build:
 
 requirements:
   host:
-    - python >=3.9
+    - python {{ python_min }}
     - flit-core >=3.7
     - pip
   run:
-    - python >=3.9
+    - python >={{ python_min }}
     - requests >=2.25.0
     - sphinx >=7.2
 
@@ -34,6 +35,7 @@ test:
     - pip check
     - sphinx-build-confluence --help
   requires:
+    - python {{ python_min }}
     - pip
 
 about:
