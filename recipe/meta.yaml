@@ -1,6 +1,6 @@
 {% set python_min = python_min|default("3.9") %}
 {% set name = "sphinxcontrib-confluencebuilder" %}
-{% set version = "2.11.0" %}
+{% set version = "2.12.0" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/sphinxcontrib_confluencebuilder-{{ version }}.tar.gz
-  sha256: 4c744f5d6fd183f7972253dfb1ae2ed641de5e3281373540917f55ae183dd27d
+  sha256: f98287f6a4eda963549503119054a63fe44af0800debfaeb61cb6f637a487fe2
 
 build:
   entry_points:
@@ -25,7 +25,7 @@ requirements:
   run:
     - python >={{ python_min }}
     - requests >=2.25.0
-    - sphinx >=7.2
+    - sphinx >=7.3
 
 test:
   imports:
